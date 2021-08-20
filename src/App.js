@@ -2,19 +2,21 @@ import { useState } from "react";
 import "./styles.css";
 
 const selfHelpBook = {
-  "A Mind For Numbers": "Barbara Oakley",
-  "The Code of Extraordinary Mind": "Vishen Lakhiani",
-  "Inner Engineering": "Sadhguru"
+  "A Mind For Numbers [8/10]": "Barbara Oakley",
+  "The Code of Extraordinary Mind [8.5/10]": "Vishen Lakhiani",
+  "Inner Engineering [currently reading]": "Sadhguru"
 };
 
 const novel = {
-  "The Adventures of Tom Sawyer": "Mark Twain",
-  "David Copperfield": "Charles Dickens",
-  "The Strange Case of Dr Jekyll and Mr Hyde": "Robert Louis Stevenson"
+  "The Adventures of Tom Sawyer [9/10]": "Mark Twain",
+  "David Copperfield [8/10]": "Charles Dickens",
+  "The Strange Case of Dr Jekyll and Mr Hyde [9.5/10]": "Robert Louis Stevenson"
 };
 
 const habitsBook = {
-  "Atomic Habits": "James Clear"
+  "Atomic Habits [10/10]": "James Clear",
+  "The Power of Your Subconscious Mind [8/10]" : "Joseph Murphy",
+  "Think Like a Monk [9/10]" : "Jay Shetty"
 };
 
 export default function App() {
@@ -48,7 +50,7 @@ export default function App() {
           Story Type
         </button>
         <button onClick={habitsHandler} className="btn habits">
-          Habits
+          Habits & Mental Health
         </button>
 
         {Object.entries(books).map((item) => {
